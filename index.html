@@ -12,12 +12,12 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <!-- Open Graph meta tags -->
-    	<meta property="og:title" content="Riddling Records" />
-    	<meta property="og:description" content="An independent Finnish record label run by the artists themselves. Steady releasing soulful music both paywall-free and on streaming, worldwide." />
-    	<meta property="og:image" content="https://juzmar.kuvat.fi/kuvat/Kassu/IMG-20250216-WA0002.jpg" />
-    	<meta property="og:url" content="https://juzmar.kuvat.fi" />
-    	<meta property="og:type" content="website" />
-		</head>
+    		<meta property="og:title" content="Riddling Records" />
+    		<meta property="og:description" content="An independent Finnish record label run by the artists themselves. Steady releasing soulful music both paywall-free and on streaming, worldwide." />
+    		<meta property="og:image" content="https://juzmar.kuvat.fi/kuvat/Kassu/IMG-20250216-WA0002.jpg" />
+    		<meta property="og:url" content="https://juzmar.kuvat.fi" />
+    		<meta property="og:type" content="website" />
+	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -380,109 +380,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-            <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Form Validation</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-
-        .error {
-            color: red;
-            font-size: 0.9em;
-        }
-
-        form {
-            max-width: 400px;
-        }
-
-        label {
-            display: block;
-            margin: 10px 0 5px;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            box-sizing: border-box;
-        }
-
-        button {
-            padding: 8px 16px;
-            font-size: 1em;
-        }
-    </style>
-</head>
-<body>
-
-    <h1>Contact Us</h1>
-    <form id="contactForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
-        <div class="error" id="nameError"></div>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-        <div class="error" id="emailError"></div>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4"></textarea>
-        <div class="error" id="messageError"></div>
-
-        <button type="submit">Submit</button>
-    </form>
-
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent form submission
-            let isValid = true;
-
-            // Clear previous errors
-            document.getElementById('nameError').textContent = '';
-            document.getElementById('emailError').textContent = '';
-            document.getElementById('messageError').textContent = '';
-
-            // Validate Name
-            const name = document.getElementById('name').value.trim();
-            if (name === '') {
-                document.getElementById('nameError').textContent = 'Name is required.';
-                isValid = false;
-            }
-
-            // Validate Email
-            const email = document.getElementById('email').value.trim();
-            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-            if (email === '') {
-                document.getElementById('emailError').textContent = 'Email is required.';
-                isValid = false;
-            } else if (!emailPattern.test(email)) {
-                document.getElementById('emailError').textContent = 'Invalid email address.';
-                isValid = false;
-            }
-
-            // Validate Message
-            const message = document.getElementById('message').value.trim();
-            if (message === '') {
-                document.getElementById('messageError').textContent = 'Message is required.';
-                isValid = false;
-            }
-
-            // If valid, show success alert
-            if (isValid) {
-                alert('Form submitted successfully!');
-                // Optionally, you could submit the form here using AJAX or another method
-            }
-        });
-    </script>
-
-</body>
-</html>
 
 	</body>
 </html>
